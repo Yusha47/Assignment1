@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Place List</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Use your existing CSS file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="form-group">
+            <input type="text" id="search-bar" name="search" placeholder="Enter name to search">
+        </div>
+
+        <!-- Table for displaying tourist places -->
+        <div class="box">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>ADDRESS</th>
+                        <th>RATING</th>
+                        <th>PICTURE</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lalbagh Fort</td>
+                        <td>Lalbagh</td>
+                        <td>1</td>
+                        <td><img src="placeholder1.jpg" alt="Tourist Place 1"></td>
+                        <td>
+                            <button type="button" class="submit-btn">Update</button>
+                            <button type="button" class="reset-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mahasthan Gor</td>
+                        <td>Comilla</td>
+                        <td>1</td>
+                        <td><img src="placeholder2.jpg" alt="Tourist Place 2"></td>
+                        <td>
+                            <button type="button" class="submit-btn">Update</button>
+                            <button type="button" class="reset-btn">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Create New Tourist Place Button -->
+        <div class="form-actions">
+            <button type="button" class="submit-btn">Create New Tourist Place</button>
+        </div>
+    </div>
+</body>
+</html>
