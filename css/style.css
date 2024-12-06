@@ -117,34 +117,143 @@ button:hover{
 .back-link:hover {
     text-decoration: underline;
 }
+/* Responsive Container */
+.responsive-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Search Bar Styling */
+.search-container {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 15px; /* Increased padding for a larger height */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #efefef; /* Changed to #efefef */
+}
+
 /* Table Styling */
+.table-container {
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto; /* For responsiveness on smaller devices */
+    margin-bottom: 20px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
     font-size: 16px;
 }
 
 th, td {
-    border: 1px solid #ccc;
-    text-align: center;
-    padding: 15px;
+    border: 1px solid #ccc; /* Light border around cells */
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Increased padding for larger row height */
 }
 
 th {
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* Black background for header */
+    color: #fff; /* White text in header */
     font-weight: bold;
 }
 
 tr:nth-child(even) {
-    background-color: #f4f4f4;
+    background-color: #efefef; /* Light gray background for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
 }
 
 /* Image Styling in Table */
 table img {
-    width: 100px;
-    height: auto;
+    width: 100px; /* Fixed width for consistency */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 4px;
 }
 
+/* Action Buttons in Table */
+button.update-btn, button.delete-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button.update-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Create Button */
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#create-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+#create-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    th, td {
+        font-size: 14px;
+        padding: 15px; /* Slightly reduced padding for smaller screens */
+    }
+
+    table img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    #search-bar {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button.update-btn, button.delete-btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    #create-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

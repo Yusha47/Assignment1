@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tourist Place List</title>
-    <link rel="stylesheet" href="../css/style.css"> <!-- Use your existing CSS file -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="responsive-container">
         <!-- Search Bar -->
-        <div class="form-group">
+        <div class="search-container">
             <input type="text" id="search-bar" name="search" placeholder="Enter name to search">
         </div>
 
         <!-- Table for displaying tourist places -->
-        <div class="box">
+        <div class="table-container">
             <table>
                 <thead>
                     <tr>
@@ -26,33 +26,35 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- First Row -->
                     <tr>
                         <td>Lalbagh Fort</td>
                         <td>Lalbagh</td>
                         <td>1</td>
                         <td><img src="placeholder1.jpg" alt="Tourist Place 1"></td>
                         <td>
-                            <button type="button" class="submit-btn">Update</button>
-                            <button type="button" class="reset-btn">Delete</button>
+                            <button type="button" class="update-btn">Update</button>
+                            <button type="button" class="delete-btn">Delete</button>
                         </td>
                     </tr>
+                    <!-- Second Row -->
                     <tr>
                         <td>Mahasthan Gor</td>
                         <td>Comilla</td>
                         <td>1</td>
                         <td><img src="placeholder2.jpg" alt="Tourist Place 2"></td>
                         <td>
-                            <button type="button" class="submit-btn">Update</button>
-                            <button type="button" class="reset-btn">Delete</button>
+                            <button type="button" class="update-btn">Update</button>
+                            <button type="button" class="delete-btn">Delete</button>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- Create New Tourist Place Button -->
-        <div class="form-actions">
-            <button type="button" class="submit-btn">Create New Tourist Place</button>
+        <!-- Button for creating a new tourist place -->
+        <div class="button-container">
+            <button id="create-btn" onclick="window.location.href='./index.html'">Create New Tourist Place</button>
         </div>
     </div>
 </body>
